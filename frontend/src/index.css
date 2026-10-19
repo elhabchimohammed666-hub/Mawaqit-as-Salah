@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-arabic: "Amiri", serif;
+  --color-night: #07111f;
+  --color-card: #0e1b2e;
+  --color-gold: #d4af37;
+  --color-emerald: #10b981;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+}
+
+.font-arabic {
+  font-family: var(--font-arabic);
+}
+
+.pattern-bg {
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(16, 185, 129, 0.12), transparent 28%),
+    radial-gradient(circle at 80% 0%, rgba(212, 175, 55, 0.12), transparent 24%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 40%);
+}
+
+.dark .pattern-bg {
+  background-image:
+    radial-gradient(circle at 18% 12%, rgba(16, 185, 129, 0.18), transparent 32%),
+    radial-gradient(circle at 88% 8%, rgba(212, 175, 55, 0.1), transparent 26%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 45%);
+}
+
+.glass {
+  backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.dark .glass {
+  background: rgba(14, 27, 46, 0.72);
+  border: 1px solid rgba(212, 175, 55, 0.12);
+}
