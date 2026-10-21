@@ -45,14 +45,7 @@ npm run dev
 
 Le serveur écoute sur `http://localhost:5050`.
 
-Variables `.env` :
 
-```
-PORT=5050
-NODE_ENV=development
-CLIENT_ORIGIN=http://localhost:5173
-ALADHAN_BASE_URL=https://api.aladhan.com/v1
-MONGO_URI=
 ```
 
 Laissez `MONGO_URI` vide si vous n’utilisez pas MongoDB. Les réglages (méthode, école, ville) sont alors sauvegardés dans `localStorage`.
