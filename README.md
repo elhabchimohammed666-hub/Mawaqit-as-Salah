@@ -1,3 +1,6 @@
+## License
+   © 2026 Elhabchi Mohammed. All Rights Reserved.
+
 # Mawaqit as-Salah — مواقيت الصلاة
 
 Application web d’horaires de prière (MERN) : React + Vite + Tailwind, API Express, données **AlAdhan**.
