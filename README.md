@@ -62,7 +62,7 @@ npm install
 npm run dev
 ```
 
-Ouvrez `http://localhost:5173`. Vite proxifie `/api` vers le backend.
+Ouvrez `http://localhost:5173`. Vite proxifie `/api` vers le backend .
 
 ## API interne
 
